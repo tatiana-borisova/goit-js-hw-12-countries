@@ -6,7 +6,7 @@
     <p class='country__language'><b>Languages:</b> </p>
     <ul class='languages'>
       {{#each 0.languages}}
-        <li class='language'>{{this}}</li>
+            <li class='language'>{{this}}</li>
       {{/each}}
     </ul>
     <p class='country__currency'><b>Currencies:</b> </p>
@@ -16,5 +16,5 @@
       {{/each}}
     </ul>
   </div>
-  <img {{#each 0.flags}}{{#if @first}}src='{{this}}'{{/if}}{{/each}} alt='{{0.name.common}}' class='country__flag' width='230' />
+  <img {{#each 0.flags}}{{#if @first}}src='{{this}}'{{/if}}{{/each}} alt='{{0.name.common}}' class='country__flag' />
   </div>

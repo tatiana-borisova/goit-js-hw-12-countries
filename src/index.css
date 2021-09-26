@@ -1,24 +1,71 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(188, 235, 247);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .title {
-  font-size: large;
+  display: block;
+  margin: 11px auto;
+  font-weight: normal;
+  font-size: 25px;
+}
+.input {
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 .country {
-  margin-top: 20px;
-  margin-left: 10px;
-  max-width: 80%;
-  background-color: rgb(211, 211, 211);
-  box-shadow: 0 0 5px 10px rgb(211, 211, 211);
   padding: 20px;
+  max-width: 70%;
+  margin: 0 auto;
 }
 .country__name {
   display: flex;
   justify-content: center;
   margin: 0;
+  font-size: 40px;
 }
 .country__info {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  font-size: 25px;
+  color: rgb(0, 0, 75);
+}
+.country__flag {
+  border: black 1px solid;
+  margin-left: 30px;
+  width: 300px;
+}
+.baggage-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -100;
+}
+.language,
+.currency,
+.country-list__item {
+  position: relative;
+  margin-left: 40px;
+  font-size: 25px;
+}
+.language::before,
+.currency::before,
+.country-list__item::before {
+  position: absolute;
+  top: 4px;
+  left: -25px;
+  display: block;
+  content: '';
+  background: transparent;
+  background-image: url('https://img.icons8.com/external-tulpahn-detailed-outline-tulpahn/64/000000/external-airplane-mobile-user-interface-tulpahn-detailed-outline-tulpahn.png');
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
