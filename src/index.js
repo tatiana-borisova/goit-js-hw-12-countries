@@ -28,7 +28,7 @@ function onSearch(e) {
   API.fetchCountries(searchQuery)
     .then(renderCountryCard)
     .catch(onFetchError)
-    .finally(debounce(clearInput, 2000));
+    .finally(debounce(clearInput, 40000));
 }
 
 function renderCountryCard(country) {
