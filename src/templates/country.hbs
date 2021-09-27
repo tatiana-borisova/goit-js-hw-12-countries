@@ -2,7 +2,7 @@
   <div class='country__info'>
   <div class='country__description'>
     <p class='country__capital'><b>Capital:</b> {{0.capital}}</p>
-    <p class='country__population'><b>Population:</b> {{0.area}}</p>
+    <p class='country__population'><b>Area:</b> {{0.area}}km²</p>
     <p class='country__language'><b>Languages:</b> </p>
     <ul class='languages'>
       {{#each 0.languages}}
@@ -15,6 +15,7 @@
         <li class='currency'>{{this.name}}: {{this.symbol}}</li>
       {{/each}}
     </ul>
+
   </div>
   <img {{#each 0.flags}}{{#if @first}}src='{{this}}'{{/if}}{{/each}} alt='{{0.name.common}}' class='country__flag' />
   </div>

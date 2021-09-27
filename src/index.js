@@ -20,7 +20,7 @@ refs.searchInput.addEventListener(
 
 function onSearch(e) {
   const searchQuery = e.target.value.trim();
-  if (!searchQuery) {
+  if (!searchQuery && searchQuery !== '') {
     error({ text: 'Please, enter a country name' });
     return;
   }
@@ -53,6 +53,6 @@ function onFetchError(err) {
   }
 }
 
-function clearInput() {
-  refs.searchInput.value = '';
-}
+// function clearInput() {
+//   refs.searchInput.value = '';
+// }

@@ -12,6 +12,7 @@ ul {
 .title {
   display: block;
   margin: 11px auto;
+  margin-top: 60px;
   font-weight: normal;
   font-size: 25px;
 }
@@ -34,12 +35,16 @@ ul {
 .country__info {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   font-size: 25px;
   color: rgb(0, 0, 75);
 }
+.country__description {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 .country__flag {
   border: black 1px solid;
-  margin-left: 30px;
   width: 300px;
 }
 .baggage-img {
