@@ -45,12 +45,10 @@ function renderCountryCard(country) {
   }
 }
 
-function onFetchError(err) {
-  if (err.status === 404) {
-    error({
-      text: 'No matches found, please enter a new query.',
-    });
-  }
+function onFetchError() {
+  error({
+    text: 'No matches found, please enter a new query.',
+  });
 }
 
 // function clearInput() {
