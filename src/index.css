@@ -43,6 +43,9 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.country-list__link {
+  color: rgb(0, 104, 173);
+}
 .country__flag {
   border: black 1px solid;
   width: 300px;
